@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.js" integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
+    <title>Divy</title>
+    <style>
+        .styles {
+            /* width: 200px; */
+            height: 30px;
+            background-color: lightblue;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #000;
+        }
+    </style>
+        <script>
+            $(document).ready(function() {
+                $('#addDiv').click(function() {
+                    let text = $('#divText').val();
+                    
+                    if (text.trim() !== "") {
+                        $('#container').append('<div class="styles">' + text + '</div>');
+                        $('#divText').val('');
+                    } else {
+                        alert("Wpisz tekst przed dodaniem nowego div!");
+                    }
+                });
+    
+                $('#removeDiv').click(function() {
+                    $('#container .styles:last').remove();
+                });
+            });
+        </script>
+</head>
+<body>
+    <input type="text" id="divText" placeholder="Napisz cos">
+    <button id="addDiv">Dodaj Div</button>
+    <button id="removeDiv">Usuń Div</button>
+
+    <div id="container"></div>
+
+
+</body>
+</html>

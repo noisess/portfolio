@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f8ff;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+.game-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.draggable-container,
+.drop-container {
+    display: grid;
+    grid-template-columns: repeat(5, 100px);
+    grid-gap: 15px;
+}
+
+.draggable {
+    width: 100px;
+    height: 100px;
+    cursor: grab;
+}
+
+.drop-zone {
+    width: 100px;
+    height: 100px;
+    border: 2px dashed #333;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.drop-zone.correct {
+    border-color: #28a745;
+    background-color: #d4edda;
+}
+
+.drop-zone.wrong {
+    border-color: #dc3545;
+    background-color: #f8d7da;
+}
+#resetButton {
+    padding: 10px 20px;
+    margin: 20px 0;
+    background-color: #ff7f50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#resetButton:hover {
+    background-color: #ff6347;
+}
+#resultMessage {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #333;
+}
+
+.hidden {
+    display: none;
+}

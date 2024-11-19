@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Owocki</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Owocki</h1>
+    <div id="timer">Time: 00:00</div>
+    <div id="resultMessage" class="hidden"></div>
+    <div class="game-container">
+        <div class="draggable-container">
+            <img src="apple.png" alt="Apple" class="draggable" id="apple" draggable="true">
+            <img src="banana.png" alt="Banana" class="draggable" id="banana" draggable="true">
+            <img src="blueberry.png" alt="Blueberry" class="draggable" id="blueberry" draggable="true">
+            <img src="grapes.png" alt="Grapes" class="draggable" id="grapes" draggable="true">
+            <img src="mango.png" alt="Mango" class="draggable" id="mango" draggable="true">
+            <img src="orange.png" alt="Orange" class="draggable" id="orange" draggable="true">
+            <img src="peach.png" alt="Peach" class="draggable" id="peach" draggable="true">
+            <img src="pear.png" alt="Pear" class="draggable" id="pear" draggable="true">
+            <img src="strawberry.png" alt="Strawberry" class="draggable" id="strawberry" draggable="true">
+            <img src="watermelon.png" alt="Watermelon" class="draggable" id="watermelon" draggable="true">
+        </div>
+        <div class="drop-container">
+            
+            <div class="drop-zone" data-match="apple">Jabłko</div>
+            <div class="drop-zone" data-match="banana">Banan</div>
+            <div class="drop-zone" data-match="blueberry">Borówki</div>
+            <div class="drop-zone" data-match="grapes">Winogrona</div>
+            <div class="drop-zone" data-match="mango">Mango</div>
+            <div class="drop-zone" data-match="orange">Pomarańcza</div>
+            <div class="drop-zone" data-match="peach">Brzoskwinia</div>
+            <div class="drop-zone" data-match="pear">Gruszka</div>
+            <div class="drop-zone" data-match="strawberry">Truskawka</div>
+            <div class="drop-zone" data-match="watermelon">Arbuz</div>
+        </div>
+    </div><br><br>
+    <button id="resetButton">Reset</button>
+    <script src="script.js"></script>
+</body>
+</html>
